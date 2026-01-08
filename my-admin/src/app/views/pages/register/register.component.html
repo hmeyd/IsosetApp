@@ -1,0 +1,112 @@
+<div class="bg-light min-vh-100 d-flex flex-row align-items-center">
+  <c-container breakpoint="md">
+    <c-row class="justify-content-center">
+      <c-col lg="10" xl="8">
+        <c-card-group>
+
+          <!-- FORMULAIRE -->
+          <c-card class="p-4">
+            <c-card-body>
+              <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+
+                <h1>Register</h1>
+                <p class="text-body-secondary">Create your account</p>
+
+                <!-- EMAIL -->
+                <c-row class="mb-3">
+                  <c-col sm="2">
+                    <label cLabel for="email" class="col-form-label">
+                      Email
+                    </label>
+                  </c-col>
+
+                  <c-col sm="10">
+                    <input
+                      cFormControl
+                      id="email"
+                      type="email"
+                      formControlName="email"
+                      placeholder="Email"
+                    />
+                  </c-col>
+                </c-row>
+
+                <!-- PASSWORD -->
+                <c-row class="mb-3">
+                  <c-col sm="2">
+                    <label cLabel for="password" class="col-form-label">
+                      Password
+                    </label>
+                  </c-col>
+
+                  <c-col sm="10">
+                    <input
+                      cFormControl
+                      id="password"
+                      type="password"
+                      formControlName="password"
+                      placeholder="Password"
+                    />
+                  </c-col>
+                </c-row>
+
+                <!-- ROLE -->
+                <fieldset class="row mb-3">
+                  <legend class="col-form-label col-sm-2 pt-0">Role</legend>
+                   <c-col sm="10">
+                    <c-form-check>
+                <input
+                    cFormCheckInput
+                    type="radio"
+                    formControlName="role"  
+                    value="Admin"   
+                    id="roleAdmin"
+                 />
+            <label cFormCheckLabel for="roleAdmin">Admin</label>
+            </c-form-check>
+
+            <c-form-check>
+            <input
+                  cFormCheckInput
+                  type="radio"
+                  formControlName="role"
+                  value="User"
+                  id="roleUser"
+                  />
+            <label cFormCheckLabel for="roleUser">User</label>
+            </c-form-check>
+              </c-col>
+              </fieldset>
+
+                <!-- SUBMIT -->
+                <c-row>
+                  <c-col>
+                    <button cButton type="submit" color="primary" class="w-100">Create account</button>
+                  </c-col>
+                </c-row>
+
+              </form>
+            </c-card-body>
+          </c-card>
+
+          <!-- CARD DROITE -->
+          <c-card class="text-white bg-primary py-5" style="min-width: 44%">
+            <c-card-body class="text-center">
+              <h2>Already have an account?</h2>
+              <p>Login if you already registered.</p>
+              <button
+                cButton
+                color="light"
+                routerLink="/login"
+                class="mt-3"
+              >
+                Login
+              </button>
+            </c-card-body>
+          </c-card>
+
+        </c-card-group>
+      </c-col>
+    </c-row>
+  </c-container>
+</div>

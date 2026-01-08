@@ -1,0 +1,30 @@
+#MainHeader{
+    color:red;
+    
+}
+
+#MainHeader > h1 {
+      font-weight: bold;
+}
+
+#rightCol > h1 {
+    font-weight: 100;
+    font-size: 14px;
+}
+#MainHeader {
+    background-color: red;
+    display: flex;
+    height: 80%;
+    justify-content: space-between;
+    padding: 0.5px;
+}
+
+.mainNav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-link{
+   display:flex;
+   align-content:space-around;
+}

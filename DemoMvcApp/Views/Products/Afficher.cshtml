@@ -1,0 +1,12 @@
+@{
+    ViewData["Title"] = "Afficher un produit";
+}
+
+<h2>Afficher un produit</h2>
+
+<form method="post" asp-action="Afficher">
+    <label for="id">ID du produit :</label>
+    <input type="number" id="id" name="id" required />
+
+    <button type="submit" class="btn btn-primary">Afficher</button>
+</form>

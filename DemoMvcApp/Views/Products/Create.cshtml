@@ -1,0 +1,27 @@
+@model DemoMvcApp.Models.Product
+
+<h2>Ajouter un produit</h2>
+
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label asp-for="Nom"></label>
+        <input asp-for="Nom" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Reference"></label>
+        <input asp-for="Reference" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Prix"></label>
+        <input asp-for="Prix" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Quantite"></label>
+        <input asp-for="Quantite" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Categorie"></label>
+        <input asp-for="Categorie" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Créer</button>
+</form>

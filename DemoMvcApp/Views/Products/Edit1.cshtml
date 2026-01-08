@@ -1,0 +1,14 @@
+@model DemoMvcApp.Models.Product
+
+<h2>Détails du produit</h2>
+
+<table class="table table-bordered">
+    <tr><th>Id</th><td>@Model.Id</td></tr>
+    <tr><th>Nom</th><td>@Model.Nom</td></tr>
+    <tr><th>Référence</th><td>@Model.Reference</td></tr>
+    <tr><th>Prix</th><td>@Model.Prix €</td></tr>
+    <tr><th>Quantité</th><td>@Model.Quantite</td></tr>
+    <tr><th>Catégorie</th><td>@Model.Categorie</td></tr>
+    <tr><th>Date d’ajout</th><td>@Model.DateAjout</td></tr>
+    <tr><th>Dernière modification</th><td>@Model.DateModification</td></tr>
+</table>

@@ -1,0 +1,28 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "isosetcode", "isosetcode.csproj", "{0501ED30-5447-9943-CE39-BDBC0257E5FD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0501ED30-5447-9943-CE39-BDBC0257E5FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0501ED30-5447-9943-CE39-BDBC0257E5FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0501ED30-5447-9943-CE39-BDBC0257E5FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0501ED30-5447-9943-CE39-BDBC0257E5FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A513987C-A176-3FB1-5BA4-AC8F1D0CD9FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A513987C-A176-3FB1-5BA4-AC8F1D0CD9FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A513987C-A176-3FB1-5BA4-AC8F1D0CD9FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A513987C-A176-3FB1-5BA4-AC8F1D0CD9FC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1893499B-4DF9-4CC3-8695-2E6C889E9F51}
+	EndGlobalSection
+EndGlobal

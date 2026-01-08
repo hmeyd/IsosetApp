@@ -1,0 +1,21 @@
+@{
+    ViewData["Title"] = "Créer / Modifier";
+}
+@model MVCProjet.Models.Depense
+
+<div class="text-center">
+    <h1 class="display-4">Créer ou ajouter une dépense</h1>
+</div>
+
+<form asp-action="MAdepenseForm" method="post">
+    <label class="mt-4">Id</label>
+    <input class="form-control" type="number" placeholder="0" asp-for="Id" />
+
+    <label class="mt-4">Valeur $</label>
+    <input class="form-control" type="number" placeholder="0" asp-for="Value" step="0.01" />
+
+    <label class="mt-4">Description</label>
+    <input class="form-control" type="text" placeholder="Ajouter une description" asp-for="Description" />
+
+    <button class="btn btn-primary mt-4" type="submit">Ok</button>
+</form>

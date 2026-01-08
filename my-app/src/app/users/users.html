@@ -1,0 +1,19 @@
+<form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+
+  <input type="email"
+         formControlName="Email"
+         placeholder="Mets ton mail"
+         autocomplete="email">
+
+  <input type="password"
+         formControlName="Password"
+         placeholder="Mets ton mot de passe"
+         autocomplete="new-password">
+
+  <input type="text"
+         formControlName="Role"
+         placeholder="Role"
+         autocomplete="off">
+
+  <button type="submit">Envoyer</button>
+</form>

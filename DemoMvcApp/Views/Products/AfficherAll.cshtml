@@ -1,0 +1,21 @@
+@model IEnumerable<DemoMvcApp.Models.Product>
+
+<h2>Liste des produits</h2>
+
+<p>
+    <a href="/Products/AfficherALL">Afficher tous les produits</a>
+</p>
+
+<table class="table">
+@foreach (var p in Model)
+{
+    <tr>
+         <td>@p.Id</td>
+        <td>@p.Nom</td>
+        <td>@p.Reference</td>
+        <td>@p.Prix €</td>
+        <td>@p.Quantite</td>
+        <td>@p.Categorie</td>
+    </tr>
+}
+</table>

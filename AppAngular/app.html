@@ -1,0 +1,23 @@
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+
+    <!--Controller-->
+    <script type="text/javascript" src="src/controllers/cartegoryController.js"></script>
+    <script type="text/javascript" src="src/controllers/itemController.js"></script>
+
+    <!--directives-->
+    <script type="text/javascript" src="src/directives/itemDecoratorDirective.js"></script>
+</head>
+
+<body ng-app="AppAngular">
+
+    <div ng-controller="itemsList">
+        <div ng-repeat="item in items">
+            <p decorate-item></p>
+        </div>
+    </div>
+
+</body>
+</html>

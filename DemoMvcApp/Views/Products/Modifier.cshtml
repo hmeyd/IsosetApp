@@ -1,0 +1,14 @@
+@{
+    ViewData["Title"] = "Modifier un produit";
+}
+
+<h2>Modifier un produit</h2>
+
+<form asp-action="Modifier" method="post">
+    <div class="form-group">
+        <label for="id">ID du produit</label>
+        <input type="number" name="id" class="form-control" required />
+    </div>
+
+    <button type="submit" class="btn btn-primary mt-3">Rechercher</button>
+</form>
