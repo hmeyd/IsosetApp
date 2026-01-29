@@ -62,6 +62,13 @@ export const routes: Routes = [
       title: 'Page 404'
     }
   },
+
+  {
+        path: 'profile',
+        loadComponent: () => import('./views/pages/profile/profile.component').then(m => m.ProfileComponent),
+        data: { title: 'Mon Profil' }
+  },
+
   {
     path: '500',
     loadComponent: () => import('./views/pages/page500/page500.component').then(m => m.Page500Component),
@@ -83,5 +90,18 @@ export const routes: Routes = [
       title: 'Register Page'
     }
   },
-  { path: '**', redirectTo: 'dashboard' }
+  { path: '**', redirectTo: 'dashboard' },
+
+  {
+    path: '',
+    children: [
+      // ... autres routes
+      {
+        path: 'profile',
+        loadComponent: () => import('./views/pages/profile/profile.component').then(m => m.ProfileComponent),
+        data: { title: 'Mon Profil' }
+      },
+    ]
+  }
+
 ];

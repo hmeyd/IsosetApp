@@ -9,18 +9,18 @@
             <c-card-body>
               <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
 
-                <h1>Register</h1>
-                <p class="text-body-secondary">Create your account</p>
+                <h1>S'INSCRIR</h1>
+                <p class="text-body-secondary">Créer un Compte</p>
 
                 <!-- EMAIL -->
                 <c-row class="mb-3">
-                  <c-col sm="2">
+                  <c-col sm="3">
                     <label cLabel for="email" class="col-form-label">
                       Email
                     </label>
                   </c-col>
 
-                  <c-col sm="10">
+                  <c-col sm="9">
                     <input
                       cFormControl
                       id="email"
@@ -33,13 +33,13 @@
 
                 <!-- PASSWORD -->
                 <c-row class="mb-3">
-                  <c-col sm="2">
+                  <c-col sm="3">
                     <label cLabel for="password" class="col-form-label">
-                      Password
+                      Mot de passe
                     </label>
                   </c-col>
 
-                  <c-col sm="10">
+                  <c-col sm="9">
                     <input
                       cFormControl
                       id="password"
@@ -53,8 +53,8 @@
                 <!-- ROLE -->
                 <fieldset class="row mb-3">
                   <legend class="col-form-label col-sm-2 pt-0">Role</legend>
-                   <c-col sm="10">
-                    <c-form-check>
+                   <c-col sm="6">
+                    
                 <input
                     cFormCheckInput
                     type="radio"
@@ -63,9 +63,9 @@
                     id="roleAdmin"
                  />
             <label cFormCheckLabel for="roleAdmin">Admin</label>
-            </c-form-check>
+            
 
-            <c-form-check>
+            
             <input
                   cFormCheckInput
                   type="radio"
@@ -74,7 +74,7 @@
                   id="roleUser"
                   />
             <label cFormCheckLabel for="roleUser">User</label>
-            </c-form-check>
+            
               </c-col>
               </fieldset>
 

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
 import { NgScrollbar } from 'ngx-scrollbar';
+import { AuthService } from '../../services/auth.service';
 
 import { IconDirective } from '@coreui/icons-angular';
 import {

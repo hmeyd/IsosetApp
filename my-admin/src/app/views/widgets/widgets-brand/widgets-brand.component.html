@@ -1,24 +1,34 @@
 <c-row class="g-4">
   @for (widget of brandData; track widget; let i = $index) {
     <c-col sm="6" xl="3">
-      <c-widget-stat-d
-        [color]="widget.color ?? ''"
-        [style]="widget.capBg ?? null"
-        [values]="widget.values"
-      >
-        <svg [name]="widget.icon" cIcon class="my-4 text-white" height="52"></svg>
-        @if (withCharts()) {
-          <c-chart
-            #chart="cChart"
-            [data]="widget.data"
-            [options]="chartOptions"
-            class="position-absolute w-100 h-100"
-            type="line"
-          >
-            {{ chart.id }}
-          </c-chart>
-        }
-      </c-widget-stat-d>
+      
+      <a [href]="widget.url" 
+         target="_blank" 
+         rel="noopener noreferrer" 
+         class="text-decoration-none">
+         
+        <c-widget-stat-d
+          [color]="widget.color ?? ''"
+          [style]="widget.capBg ?? null"
+          [values]="widget.values"
+          style="cursor: pointer;" 
+        >
+          <svg [name]="widget.icon" cIcon class="my-4 text-white" height="52"></svg>
+          
+          @if (withCharts()) {
+            <c-chart
+              #chart="cChart"
+              [data]="widget.data"
+              [options]="chartOptions"
+              class="position-absolute w-100 h-100"
+              type="line"
+            >
+              {{ chart.id }}
+            </c-chart>
+          }
+        </c-widget-stat-d>
+      </a>
+
     </c-col>
   }
 </c-row>

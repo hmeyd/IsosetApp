@@ -11,6 +11,7 @@ type BrandData = {
   color?: string
   labels?: string[]
   data: ChartData
+  url?: string
 }
 
 @Component({
@@ -62,9 +63,12 @@ export class WidgetsBrandComponent implements AfterContentInit {
     pointHoverBackgroundColor: '#fff',
     pointBackgroundColor: 'rgba(255,255,255,.55)'
   };
+
+
   brandData: BrandData[] = [
     {
       icon: 'cibFacebook',
+      url: 'https://facebook.com/youra.salm',
       values: [{ title: 'friends', value: '89K' }, { title: 'feeds', value: '459' }],
       capBg: { '--cui-card-cap-bg': '#3b5998' },
       labels: [...this.labels],
@@ -75,6 +79,7 @@ export class WidgetsBrandComponent implements AfterContentInit {
     },
     {
       icon: 'cibTwitter',
+      url: 'https://facebook.com/ton-profil',
       values: [{ title: 'followers', value: '973k' }, { title: 'tweets', value: '1.792' }],
       capBg: { '--cui-card-cap-bg': '#00aced' },
       data: {
@@ -84,6 +89,7 @@ export class WidgetsBrandComponent implements AfterContentInit {
     },
     {
       icon: 'cib-linkedin',
+      url: 'https://www.linkedin.com/in/ahmedhmeyd/',
       values: [{ title: 'contacts', value: '500' }, { title: 'feeds', value: '1.292' }],
       capBg: { '--cui-card-cap-bg': '#4875b4' },
       data: {
@@ -93,6 +99,7 @@ export class WidgetsBrandComponent implements AfterContentInit {
     },
     {
       icon: 'cilCalendar',
+      url: 'https://facebook.com/ton-profil',
       values: [{ title: 'events', value: '12+' }, { title: 'meetings', value: '4' }],
       capBg: { '--cui-card-cap-bg': 'var(--cui-warning)' },
       data: {

@@ -1,0 +1,52 @@
+<div class="bg-light dark:bg-transparent min-vh-100 d-flex flex-row align-items-center">
+  <c-container breakpoint="md">
+    <c-row class="justify-content-center">
+      <c-col lg="8" xl="6">
+        <c-card-group>
+          <c-card class="p-4">
+            <c-card-body>
+
+              <ng-container *ngIf="user$ | async as user; else noUser">
+
+                <h1>Mon Profil</h1>
+                <p class="text-body-secondary">Informations du compte</p>
+
+                <hr>
+
+                <p><strong>Email :</strong> {{ user.email }}</p>
+                <p><strong>Rôle :</strong> {{ user.role }}</p>
+
+                <div class="d-grid gap-2 mt-4">
+                  <button cButton color="success" shape="rounded-pill" (click)="onConnecte()" class="text-white py-2">
+                  <strong>CONNECTER</strong>
+                  </button>
+  
+                  <button cButton color="link" (click)="onLogout()" class="text-danger text-decoration-none mt-2">
+                    Se déconnecter
+                  </button>
+                </div>
+
+              </ng-container>
+
+              <ng-template #noUser>
+                <p>Utilisateur non connecté.</p>
+                <button cButton color="primary" routerLink="/login">
+                  Aller au login
+                </button>
+              </ng-template>
+
+            </c-card-body>
+          </c-card>
+
+          <c-card [style.minWidth.%]="44" class="text-white bg-primary py-5">
+            <c-card-body class="text-center">
+              <h2>Bienvenue 👋</h2>
+              <p>Votre espace personnel</p>
+            </c-card-body>
+          </c-card>
+
+        </c-card-group>
+      </c-col>
+    </c-row>
+  </c-container>
+</div>
